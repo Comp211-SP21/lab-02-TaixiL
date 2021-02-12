@@ -23,7 +23,7 @@ int main (int argc, char *argv[]){
 	int num = count;
 
 	if (count>32767 || count<-32768){
-		printf("The signed 16-bit representation of %c%d is: not possible.\n", sign, count);
+		printf("The two's complement 16-bit representation of %c%d is: not possible.\n", sign, count);
 		return EXIT_SUCCESS;
 	}
 	binary[0] = (sign == 45) ? 49 : 48;
@@ -45,7 +45,7 @@ int main (int argc, char *argv[]){
 		num = (binary[16-i]==one) ? (num-power2) : num;
 	}
 
-	printf("The signed 16-bit representation of %c%d is: ", sign, count);
+	printf("The two's complement 16-bit representation of %c%d is: ", sign, count);
 	for (int i=0; i<16; i++)
 		printf("%c", binary[i]);
 	printf(".\n");

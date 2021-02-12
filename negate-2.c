@@ -23,7 +23,7 @@ int main (int argc, char *argv[]){
 			binary[index]=49;
 	}
 
-	printf("The negation of the 32-bit two's complement integer ");
+	printf("The negation of the 32-bit two's complement integer %s is: ", argv[1]);
 	for (int i=0; i<32; i++)
 		printf("%c", binary[i]);
 	printf(".\n");
