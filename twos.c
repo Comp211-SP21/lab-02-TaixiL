@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 
 void setDefaultTo (char origin[], char tar);
 int power2 (int power);
