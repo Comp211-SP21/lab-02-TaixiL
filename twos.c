@@ -22,6 +22,7 @@ int main (int argc, char *argv[]){
 
 	for (int i=1; i<len; i++)
 		numString[i-1] = argv[1][i];
+
 	
 	int count = atoi(numString);
 	int num = count;
@@ -31,10 +32,9 @@ int main (int argc, char *argv[]){
 		return EXIT_SUCCESS;
 	}
 
-	int checkNonNegative = (sign==45 && num!=0) ? 1 : 0;
-	binary[0] = (checkNonNegative==1) ? 49 : 48;
+	binary[0] = (sign == 45) ? 49 : 48;
 
-	if (checkNonNegative==1) {
+	if (sign == 45 && num != 0) {
 		setDefaultTo(binary, one);
 		startVal = 1;
 		zero = 49;
@@ -53,9 +53,8 @@ int main (int argc, char *argv[]){
 		printf("%c", binary[i]);
 	printf(".\n");
 	return EXIT_SUCCESS;
+	
 }
-
-
 
 void setDefaultTo (char origin[], char tar) {
 	if (tar==48) {
