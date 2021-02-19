@@ -1,1 +1,0 @@
-The signed 16-bit representation of +211 is: 0000000011010011.

@@ -29,9 +29,10 @@ int main (int argc, char *argv[]){
 		return EXIT_SUCCESS;
 	}
 
-	binary[0] = (sign == 45) ? 49 : 48;
+	int checkNonNegative = (sign==45 && num!=0) ? 1 : 0;
+	binary[0] = (checkNonNegative==1) ? 49 : 48;
 
-	if (sign == 45 && num != 0) {
+	if (checkNonNegative==1) {
 		setDefaultTo(binary, one);
 		startVal = 1;
 		zero = 49;
@@ -50,8 +51,9 @@ int main (int argc, char *argv[]){
 		printf("%c", binary[i]);
 	printf(".\n");
 	return EXIT_SUCCESS;
-	
 }
+
+
 
 void setDefaultTo (char origin[], char tar) {
 	if (tar==48) {

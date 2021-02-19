@@ -1,1 +1,0 @@
-The two's complement 16-bit representation of +100000 is: not possible.
