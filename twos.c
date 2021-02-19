@@ -32,7 +32,7 @@ int main (int argc, char *argv[]){
 		return EXIT_SUCCESS;
 	}
 
-	binary[0] = (sign == 45) ? 49 : 48;
+	binary[0] = (sign == 45 && num!=0) ? 49 : 48;
 
 	if (sign == 45 && num != 0) {
 		setDefaultTo(binary, one);
