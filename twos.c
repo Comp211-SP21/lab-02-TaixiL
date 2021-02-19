@@ -1,7 +1,9 @@
+// PID: 730401749
+// I pledge the COMP211 honor code.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
 
 void setDefaultTo (char origin[], char tar);
 int power2 (int power);
@@ -19,7 +21,6 @@ int main (int argc, char *argv[]){
 
 	for (int i=1; i<len; i++)
 		numString[i-1] = argv[1][i];
-
 	
 	int count = atoi(numString);
 	int num = count;
